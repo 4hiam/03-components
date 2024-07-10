@@ -20,9 +20,34 @@ export class HomePage implements OnInit {
       redirecTo: '/action-sheet'
     },
     {
-      icon: 'logo-apple-appstore',
+      icon: 'alert-circle-outline',
       name: 'Alert',
       redirecTo: '/alert'
+    },
+    {
+      icon: 'beaker-outline',
+      name: 'Avatar',
+      redirecTo: '/avatar'
+    },
+    {
+      icon: 'radio-button-off-outline',
+      name: 'Buttons',
+      redirecTo: '/button'
+    },
+    {
+      icon: 'card-outline',
+      name: 'Cards',
+      redirecTo: '/card'
+    },
+    {
+      icon: 'checkmark-circle-outline',
+      name: 'Checks',
+      redirecTo: '/check'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'Date time',
+      redirecTo: '/date-time'
     }
   ];
 

@@ -1,0 +1,39 @@
+<app-header title="Date time"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Datos de Nacimiento</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-datetime display-format="DD.MM.YYYY HH:mm" 
+                    [value]="fecNac.toISOString()"
+                    (ionChange)="cambioFecha( $event )"></ion-datetime>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime showDefaultButtons="true" display-format="DD.MM.YYYY HH:mm"></ion-datetime>
+    </ion-item> -->
+  
+  
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime-button datetime="datetime" 
+                          display-format="DD.MM.YYYY HH:mm" ></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime showDefaultButtons="true" id="datetime"
+                        [value]="fecNac.toISOString()"
+                        (ionChange)="cambioFecha( $event )"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+  
+  
+  </ion-list>
+
+  
+  
+</ion-content>
